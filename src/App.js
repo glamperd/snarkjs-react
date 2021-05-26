@@ -3,8 +3,10 @@ import './App.css';
 import {zKey} from 'snarkjs';
 
 async function contribute() {
+  let fd =  { type: "mem" };
   const hash =
-        await zKey.contribute( "/data/c16_0404_amsimoes.zkey", { type: "mem" }, "contributor #2", "010a020b030d040f0r050g0tkalasdkasd", null);
+        await zKey.contribute( "/data/c16_0404_amsimoes.zkey", fd, 
+          "contributor #2", "010a020b030d040f0r050g0tkalasdkasd", console);
 
   //hashComponent.innerHTML = JSON.stringify(hash, null, 1);
   console.log(`hash = ${JSON.stringify(hash)}`);
