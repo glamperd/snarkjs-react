@@ -8,7 +8,7 @@ async function contribute() {
   }
   let fd =  { type: "mem" };
   const hash =
-        await zKey.contribute( "/data/c16_0404_amsimoes.zkey", fd, 
+        await zKey.contribute( "/data/vote_00.zkey", fd, 
           "contributor #2", "010a020b030d040f0r050g0tkalasdkasd", console, progressOptions);
 
   //hashComponent.innerHTML = JSON.stringify(hash, null, 1);
